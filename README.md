@@ -1,2 +1,2 @@
 # crypto-price-checker
-Click the button, get a crypto price 
+A simple project made to experiment with an HTMX frontend/Golang backend webstack 
