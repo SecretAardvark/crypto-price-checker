@@ -14,7 +14,7 @@ templ homepage() {
                 const encodedValue = encodeURIComponent(inputValue);
                 const newAction = `/price?ticker=${encodedValue}`;
                 submitButton.setAttribute('hx-get', newAction);
-                console.log('hx-get updated to:', submitButton.getAttribute('hx-get')); 
+                // console.log('hx-get updated to:', submitButton.getAttribute('hx-get')); 
                 htmx.process(submitButton)// Debugging line
             });
         });
@@ -25,4 +25,5 @@ templ homepage() {
         <button hx-get="/price" id="submit-button" hx-target="#crypto-price" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
         <div id="crypto-price"/>
     </div>
+    
 }
